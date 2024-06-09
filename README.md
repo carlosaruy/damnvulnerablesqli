@@ -38,6 +38,10 @@ Esto construirá e iniciará los contenedores necesarios para el laboratorio. El
 Para detener y remover los contenedores, puedes usar:
 docker-compose down
 
+## Descarga desde docker hub
+Para descargarlo directamente desde docker hub:
+
+docker pull carlosaruy/damnvulnerablesqli
 
 ## Advertencias de Seguridad
 
