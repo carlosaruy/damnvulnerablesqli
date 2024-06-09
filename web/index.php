@@ -1,6 +1,8 @@
 <?php
 // Conexión a la base de datos
-$conn = new mysqli("localhost", "username", "password", "database");
+#$conn = new mysqli("localhost", "username", "password", "database");
+#en docker se hace lio con localhost cuando estan separados los containers
+$conn = new mysqli("db", "user", "userpass", "damnvulnerablesqli");
 
 // Verificar conexión
 if ($conn->connect_error) {

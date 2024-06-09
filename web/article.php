@@ -2,7 +2,7 @@
 $id = $_GET['id']; // Punto vulnerable a inyección SQL
 
 // Conexión a la base de datos
-$conn = new mysqli("localhost", "username", "password", "database");
+$conn = new mysqli("db", "user", "userpass", "damnvulnerablesqli");
 
 // Verificar conexión
 if ($conn->connect_error) {

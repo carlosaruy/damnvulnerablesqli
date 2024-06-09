@@ -17,7 +17,7 @@ services:
       - sqli-net
 
   web:
-    image: php:7.4-apache
+    build: ./web
     volumes:
       - ./web:/var/www/html
     environment:

@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password']; // Punto vulnerable a inyección SQL
 
     // Conexión a la base de datos
-    $conn = new mysqli("localhost", "username", "password", "database");
+    $conn = new mysqli("db", "user", "userpass", "damnvulnerablesqli");
 
     // Verificar conexión
     if ($conn->connect_error) {
